@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lisu+Bosa:wght@200&family=Noto+Sans+Vithkuqi:wght@500&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <section class="main">
+        <div class="box">
+            <div class="line1">
+                <div>
+                    <input type="text" class="text" id="result" value="0" disabled />
+                </div>
+                <div>
+                    <!-- <input type="button" value="C" onclick=""> -->
+                </div>
+            </div>
+            <div class="line2">
+                <div class="line2-btn"><input class="l-gry" type="button" id="AC-btn" value="AC"
+                        onclick="clearScreen()"></div>
+                <div class="line2-btn"><input class="l-gry" type="button" style="padding-left: 3px;" value="+/-"
+                        onclick="envert()"></div>
+                <div class="line2-btn"><input class="l-gry" type="button" value="%" onclick="percentage('%')"></div>
+                <div class="line2-btn"><input class="orng" type="button" value="/" onclick="display('/')"></div>
+            </div>
+            <div class="line3">
+                <div class="line3-btn ">
+                    <input class="gry" type="button" value="7" onclick="display('7')">
+                </div>
+                <div class="line3-btn ">
+                    <input class="gry" type="button" value="8" onclick="display('8')">
+                </div>
+                <div class="line3-btn ">
+                    <input class="gry" type="button" value="9" onclick="display('9')">
+                </div>
+                <div class="line4-btn ">
+                    <input class="orng" type="button" value="x" onclick="display('*')">
+                </div>
+            </div>
+            <div class="line4">
+                <div class="line4-btn "><input class="gry" type="button" value="4" onclick="display('4')"></div>
+                <div class=" line4-btn "><input class="gry" type="button" value="5" onclick="display('5')"></div>
+                <div class=" line4-btn "><input class="gry" type="button" value="6" onclick="display('6')"></div>
+                <div class=" line4-btn"><input class="orng" type="button" value="-" onclick="display('-')"></div>
+            </div>
+            <div class="line5">
+                <div class="line5-btn "><input class="gry" type="button" value="1" onclick="display('1')"></div>
+                <div class=" line5-btn "><input class="gry" type="button" value="2" onclick="display('2')"></div>
+                <div class=" line5-btn "><input class="gry" type="button" value="3" onclick="display('3')"></div>
+                <div class=" line5-btn "><input class="orng" type="button" value="+" onclick="display('+')"></div>
+            </div>
+            <div class="line6">
+                <div class=" line6-btn "><input class="gry" type="button" value="0" onclick="display('0')"></div>
+                <div class="line6-btn "><input class="gry" type="button" value="." onclick="display('.')"></div>
+                <div class=" line6-btn "><input class="gry" type="button" value="del" onclick="del()"></div>
+
+                <div class=" line6-btn "><input class="orng" type="button" value="=" onclick="calculate()"></div>
+            </div>
+            <div class="line7">
+                <div class="rectangle"></div>
+            </div>
+        </div>
+        <div class="sqr">
+            <svg>
+                <rect style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+            </svg>
+        </div>
+    </section>
+    <script type="text/javascript" src="cal_javascript.js"></script>
+
+</body>
+
+</html>
